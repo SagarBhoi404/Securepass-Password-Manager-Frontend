@@ -114,19 +114,19 @@ const Navbar = () => {
               ))}
             </Menu>
           </Box>
-          <img  className="me-3 d-block d-md-none" src="/logo.png" alt="logo" style={{height:"30px"}} />
+          <img  className="me-2 d-block d-md-none" src="/logo.png" alt="logo" style={{height:"30px"}} />
           <Typography
             variant="h5"
             noWrap
             component="a"
          
             sx={{
-              mr: 2,
+              mr: 1,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".1rem",
               color: "inherit",
               textDecoration: "none",
             }}
@@ -147,7 +147,7 @@ const Navbar = () => {
 
           <Box sx={{ flexGrow: 0 }}>
             {!token ? (
-              <MenuItem onClick={() => navigate("/login")}>
+              <MenuItem sx={{padding:"10px 3px"}} onClick={() => navigate("/login")}>
                 <Typography textAlign="center">Login</Typography>
               </MenuItem>
             ) : (

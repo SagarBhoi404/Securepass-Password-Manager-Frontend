@@ -63,7 +63,7 @@ const Login = () => {
 
   return (
     <div className="login-wrapper">
-      <h1 className="text-white mb-5">SecurePass - Password Manager</h1>
+      <h1 className="text-white text-center mb-5">SecurePass - Password Manager</h1>
       <div className="login-box p-4 rounded">
         <h2 className="text-center mb-4">Login</h2>
         <form onSubmit={handleSubmit}>
