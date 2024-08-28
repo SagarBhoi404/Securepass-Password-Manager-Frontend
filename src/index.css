@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #001f3f; /* Navy Blue */
+  --secondary-color: #87ceeb; /* Sky Blue */
+  --accent-color: #2ecc71; /* Green */
+  --background-color: #ffffff; /* White */
+  --text-color: #333333; /* Dark Gray */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* login page css */
+.login-wrapper {
+  height: 100vh;
+  background-color: #001f3f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background-color: white;
+  width: 25rem;
+}
+
+.feature-heading{
+  color: var(--accent-color);
+}
+
+.footer{
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .login-box {
+    width: 20rem;
+  }
+}
